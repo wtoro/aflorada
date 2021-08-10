@@ -5,7 +5,8 @@ from Gen_Functions.validations import val_max_column_value
 
 # Credenciales de BD PCEnergy
 from  Gen_Functions.util import decryp
-conn_path_BD = os.path.abspath(os.path.dirname(sys.argv[0])) 
+conn_path_BD = os.path.abspath(os.path.dirname(sys.argv[0]))
+print(conn_path_BD)
 conn_BD = decryp(conn_path_BD[0:conn_path_BD.find('Ingeniero')]+r'Conexion_BD\connections.v01');
 
 # Función para crear una tabla en la BD PCEnergy desde un DataFrame en Python
